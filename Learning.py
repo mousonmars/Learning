@@ -1,3 +1,8 @@
+# Das ist eine Themensammlung um python etwas zu vertiefen
+# Tobias Dantmann
+# 03.02.2024
+
+
 # Tuple, Inhalt kann nicht verändert werden
 a = ("Test", "Welt", "Hallo")
 print(type(a), "Das sollte ein Tuple sein !")
@@ -21,5 +26,7 @@ print(c.keys())
 # inhalt über Key ausgeben
 print(c["test"])
 print(c[123])
+
+## operatoren
 
 
