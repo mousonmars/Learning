@@ -1,11 +1,11 @@
-# Das ist eine Themensammlung um python etwas zu vertiefen
-# Tobias Dantmann
-# 03.02.2024
+"""
+Das ist eine Themensammlung um python etwas zu vertiefen
+Tobias Dantmann
+03.02.2024
+"""
 
-#Base settings
+# Base settings
 i = 0
-
-
 
 # Tuple, Inhalt kann nicht verändert werden
 a = ("Test", "Welt", "Hallo")
@@ -38,7 +38,7 @@ print(c[123])
 
 print("---------------------------------------------")
 
-## operatoren
+# operatoren
 
 # a > b a grösser b
 # a => b a grösser gleich b
@@ -118,4 +118,4 @@ print(colors)
 
 print("---------------------------------------------")
 
-#blalbla geändert in GIT 
+# blalbla geändert in GIT
