@@ -1,1 +1,1 @@
-Erste Schritte in Python 
+Grundlagen in Python und übungen
