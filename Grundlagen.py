@@ -2,6 +2,10 @@
 # Tobias Dantmann
 # 03.02.2024
 
+#Base settings
+i = 0
+
+
 
 # Tuple, Inhalt kann nicht verändert werden
 a = ("Test", "Welt", "Hallo")
@@ -13,11 +17,11 @@ print("---------------------------------------------")
 
 # Listen, Inhalt kann verändert werden
 b = ["Test", "Welt", "Hallo"]
-print(type(b), "Das sollte eine List sein")
+print(type(b), "Das sollte eine Liste sein")
 # items können nur über Ihre Stelle angesprochen werden
 print(b[1])
 # Inhalt verändern
-b[1] = ("Mars")
+b[1] = "Mars"
 print(b[1], "jetzt verändert")
 
 print("---------------------------------------------")
@@ -25,7 +29,7 @@ print("---------------------------------------------")
 # DICT Inhalt kann geändert werden
 c = {"test": 1, "Welt": 1, "Hallo": 1, 123: "ABC"}
 print(type(c))
-# Item werden über Ihren Key angesprochen
+# Items werden über Ihren Key angesprochen
 print(c.keys())
 print(c.values())
 # inhalt über Key ausgeben
@@ -54,7 +58,7 @@ print("---------------------------------------------")
 
 if a == 5:
     print("ist halt 5")
-elif (a == "Hallo"):
+elif a == "Hallo":
     print("zusätzliches Argument mit elif")
 else:
     print("ist halt nicht 5 ")
@@ -64,7 +68,7 @@ print("---------------------------------------------")
 
 squares = ["red", "blue", "yellow", "grey", "black"]
 
-for i in range(0,4):
+for i in range(0, 4):
     squares[i] = "whites"
     print(squares[i])
 
@@ -87,11 +91,11 @@ print("---------------------------------------------")
 # mit der For "enummerate" Schleife wird durch Squares iteriert
 # i dient as Schleifen Variable, square wird er wert aus Squares[i] zugewiesen
 
-i=0
+i = 0
 
-for i,square in enumerate(squares):
+for i, square in enumerate(squares):
     # inhalt von squares
-    print(square ,i)
+    print(square, i)
     # squares jeweils neuen inhalt zuweisen
     squares[i] = "rosa"
     print(squares[i])
@@ -100,5 +104,16 @@ print(squares)
 
 print("---------------------------------------------")
 
+# While Schleife, code bleibt so lange in der while schleife bis statement FALSE eintritt
+i = 0
+colors = ["orange", "orange", "orange", "black", "orange"]
+colors_new = []
 
+while colors[i] == "orange":
+    colors_new.append(colors[i])
+    i = i+1
 
+print(colors_new)
+print(colors)
+
+print("---------------------------------------------")
