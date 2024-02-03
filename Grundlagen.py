@@ -51,4 +51,36 @@ else:
     print("ist halt nicht 5 ")
 
 
+# FOR loops
+
+squares = ["red", "blue", "yellow", "grey", "black"]
+
+for i in range(0,4):
+    squares[i] = "whites"
+
+print(squares)
+
+#for squares in squares:
+    #print(squares)
+
+i=0
+print("seperato")
+print(squares)
+print("seperator")
+
+# Die Varialble square wir der inhalt von Squares zugewiesen
+# mit der For "enummerate" Schleife wird durch Squares iteriert
+
+for i,square in enumerate(squares):
+    # inhalt von squares
+    print(square ,i)
+    # squares jeweils neuen inhalt zuweisen
+    squares[i] = "rosa"
+    print(squares[i])
+
+print(squares)
+
+
+
+
 
