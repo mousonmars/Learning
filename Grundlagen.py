@@ -9,6 +9,8 @@ print(type(a), "Das sollte ein Tuple sein !")
 # items können nur über Ihre Stelle angesprochen werden
 print(a[1])
 
+print("---------------------------------------------")
+
 # Listen, Inhalt kann verändert werden
 b = ["Test", "Welt", "Hallo"]
 print(type(b), "Das sollte eine List sein")
@@ -16,16 +18,21 @@ print(type(b), "Das sollte eine List sein")
 print(b[1])
 # Inhalt verändern
 b[1] = ("Mars")
-print(b[1])
+print(b[1], "jetzt verändert")
+
+print("---------------------------------------------")
 
 # DICT Inhalt kann geändert werden
 c = {"test": 1, "Welt": 1, "Hallo": 1, 123: "ABC"}
 print(type(c))
 # Item werden über Ihren Key angesprochen
 print(c.keys())
+print(c.values())
 # inhalt über Key ausgeben
 print(c["test"])
 print(c[123])
+
+print("---------------------------------------------")
 
 ## operatoren
 
@@ -43,6 +50,8 @@ if a == 5:
 else:
     print("ist halt nicht 5 ")
 
+print("---------------------------------------------")
+
 if a == 5:
     print("ist halt 5")
 elif (a == "Hallo"):
@@ -50,26 +59,35 @@ elif (a == "Hallo"):
 else:
     print("ist halt nicht 5 ")
 
-
+print("---------------------------------------------")
 # FOR loops
 
 squares = ["red", "blue", "yellow", "grey", "black"]
 
 for i in range(0,4):
     squares[i] = "whites"
+    print(squares[i])
+
 
 print(squares)
 
-#for squares in squares:
-    #print(squares)
+print("---------------------------------------------")
 
-i=0
-print("seperato")
+# Die Varialble count wir der iterierte inhalt von Squares zugewiesen
+# keine Schleifenvariable, soviele / solange items in squares, wird der inhalt square zugewiesen
+for square in squares:
+    print(square)
+
 print(squares)
-print("seperator")
+
+
+print("---------------------------------------------")
 
 # Die Varialble square wir der inhalt von Squares zugewiesen
 # mit der For "enummerate" Schleife wird durch Squares iteriert
+# i dient as Schleifen Variable, square wird er wert aus Squares[i] zugewiesen
+
+i=0
 
 for i,square in enumerate(squares):
     # inhalt von squares
@@ -80,7 +98,7 @@ for i,square in enumerate(squares):
 
 print(squares)
 
-
+print("---------------------------------------------")
 
 
 
