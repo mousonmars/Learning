@@ -29,4 +29,26 @@ print(c[123])
 
 ## operatoren
 
+# a > b a grösser b
+# a => b a grösser gleich b
+# a < b a kleiner b
+# a <= b a kleiner gleich b
+# a == b a gleich b
+# a != b a ungleich b
+
+a = 5
+if a == 5:
+    print("ist halt 5")
+    a = "Hallo"
+else:
+    print("ist halt nicht 5 ")
+
+if a == 5:
+    print("ist halt 5")
+elif (a == "Hallo"):
+    print("zusätzliches Argument mit elif")
+else:
+    print("ist halt nicht 5 ")
+
+
 
