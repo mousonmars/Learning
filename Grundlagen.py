@@ -7,6 +7,12 @@ Tobias Dantmann
 # Base settings
 i = 0
 
+#Strings
+a = (r"\n")
+#r gibt an das der string im raw format gelesen wiird, Backslash wird nicht als escape Zeichen erkannt
+
+print(a)
+
 # Tuple, Inhalt kann nicht verändert werden
 a = ("Test", "Welt", "Hallo")
 print(type(a), "Das sollte ein Tuple sein !")
