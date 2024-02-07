@@ -22,23 +22,27 @@ class person:
         return age
 
     def rollercoaster(self):
-        if self.height > 100 and self.height < 150:
-            return True
+        if self.height >= 110 and self.height < 150:
+            return "Passt"
         elif self.height > 150:
-            return "Zu Groß"
+            return "zu groß"
         else:
-            return False
+            return "zu klein"
         #mischen von print und anderen ausgaben ist doof
 
 Tobi = person("tobi", 1980, "blue", "male", 178)
 Anna = person("Anna", 1986, "blue", "female", 160)
-Emma = person("Emma", 2016, "blue", "female", 90)
+Emma = person("Emma", 2016, "blue", "female", 110)
+Lara = person("Lara", 2018, "blue", "female", 105)
 
 
 
 
 print(Emma.rollercoaster())
 print(Tobi.rollercoaster())
+print(Anna.calc_age())
+print(Lara.calc_age())
+print(Lara.rollercoaster())
 
 
 
