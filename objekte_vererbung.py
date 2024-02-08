@@ -52,6 +52,9 @@ Tobi = person("tobi", 1980, "blue", "male", 178)
 Anna = person("Anna", 1986, "blue", "female", 160)
 Emma = person("Emma", 2016, "blue", "female", 90)
 
+print(Tobi.calc_age())
+print(Anna.calc_age())
+
 Lara =male("lara", 2018, "female","female", 110, "Kindergarten", "Rennfahrer")
 
 

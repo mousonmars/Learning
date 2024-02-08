@@ -40,8 +40,6 @@ Lara = person("Lara", 2018, "blue", "female", 105)
 
 print(Emma.rollercoaster())
 print(Tobi.rollercoaster())
-print(Anna.calc_age())
-print(Lara.calc_age())
 print(Lara.rollercoaster())
 
 
